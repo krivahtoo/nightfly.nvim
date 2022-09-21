@@ -82,7 +82,7 @@ local function set_groups()
     StatusLineTerm = { fg = c.fg, bg = c.bg },
     StatusLineTermNC = { fg = c.fg, bg = c.bg3 },
     TabLineFill = { fg = c.fg },
-    TablineSel = { fg = c.bg0, bg = c.blue },
+    TablineSel = { fg = c.bg, bg = c.blue },
     Tabline = { fg = c.gray },
     Title = { fg = c.cyan, bg = c.none, style = cfg.bold },
     Visual = { bg = c.regal_blue },
@@ -396,7 +396,7 @@ local function set_groups()
     NERDTreeToggleOn = { fg = c.green },
     NERDTreeToggleOff = { fg = c.red },
     -- NvimTree
-    NvimTreeRootFolder = { fg = c.purple, style = 'italic' },
+    NvimTreeRootFolder = { fg = c.steel_blue, style = 'italic' },
     NvimTreeNormal = {
       fg = c.fg,
       bg = utils.rgba2rgb('#000000', c.bg, 0.9),
@@ -546,6 +546,8 @@ local function set_groups()
     CocExplorerFileModified = { fg = c.purple },
     CocExplorerFileHidden = { fg = c.gray },
     CocExplorerHelpLine = { fg = c.purple },
+    -- Fidget.nvim
+    FidgetTitle = { fg = c.turquoise, style = 'bold' },
   }
 
   local overrides = vim.g.nightfly_overrides
